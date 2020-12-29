@@ -14,6 +14,9 @@
         width: 150px;
         height: 350px;
         background-color: black;
+        margin-left: auto;
+        margin-right: auto;
+    
       }
 
       .circle {
@@ -21,13 +24,59 @@
         height: 100px;
         border-radius: 50px;
         border: 0.5px solid white;
+        
+       
       }
 
       /* 👇 اكتب الكود هنا */
 
       img {
         /* عدل على عرض الصورة */
+        width: 250px;
       }
+
+      .green{
+        opacity: 0%;
+        transition: all 0.5s ease-in-out;
+        
+      }
+
+      .yellow{
+        opacity: 0%;
+        transition: all 0.5s ease-in-out;
+      }
+
+      .red{
+        opacity: 0%;
+        transition: all 0.5s ease-in-out;
+      }
+
+
+
+      .green:hover{
+        opacity: 1;
+
+        background-color: green;
+      }
+
+      .yellow:hover{
+        opacity: 1;
+
+        background-color: yellow;
+      }
+      
+      .red:hover {
+        opacity: 1;
+
+        background-color: red;
+      }
+      p
+      {
+        text-align: center;
+      }
+
+
+
     </style>
   </head>
   <body>
@@ -36,13 +85,13 @@
     <!--            30 px غير حجم الخط الى-             -->
     <!--   (inline styling) p تلميح: ستغير خصائص عنصر   -->
     <!----------------====================---------------->
-    <p>مرحباً، أنا تمرين CSS</p>
+    <p style="color: orange;" style="font-size: 30px;">مرحباً، أنا تمرين CSS</p>
 
     <!-------------------المطلوب الثاني------------------->
     <!--             اجعل عرض الصورة ٢٥٠ بكسل-          -->
     <!--     فوق CSS في img تلميح: ستغير خصائص عنصر     -->
     <!----------------====================---------------->
-    <img src="./car.png" alt="" />
+    <img src="./img/car.png" alt="" />
 
     <!-------------------المطلوب الثالث------------------->
     <!--  غير لون خلفية الدوائر حتى يصبح شكل اشارة مرور -->
@@ -50,9 +99,9 @@
     <!-- style تلميح: ستغير خصائص الكلاسات اللي فوق داخل -->
     <!----------------====================---------------->
     <div class="square">
-      <div class="circle 1"></div>
-      <div class="circle 2"></div>
-      <div class="circle 3"></div>
+      <div class="circle green"></div>
+      <div class="circle yellow"></div>
+      <div class="circle red"></div>
     </div>
 
     <!----------------====================---------------->
